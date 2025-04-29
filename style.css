@@ -1,0 +1,59 @@
+header {
+	/* Header - Oberleiste - Kopfleiste */
+	position:absolute;									/* Position */
+	align-content:center;								/* Schrift-anordnung */
+	left:0px;											/* Abstand nach links */
+	top:0px;											/* Abstand nach oben */
+	color:white;										/* Schrift-Farbe */
+	font-size:180%;										/* Schrift-groesse */
+	background-color: rgba(0, 0, 200, 0.51);			/* Hintergrund-Farbe */ 
+	height:75px;										/* Header Höhe */ 
+	max-height:10%;										/* Header-Maximal Höhe */
+	width:100%;											/* Header Breite */ 
+	max-width:101%										/* Header-Maximal Breite */
+}
+
+table{
+	position:absolute;
+	left:10%;
+	bottom:00%;
+	border-collapse:separate;
+	table-layout:auto;
+	padding:0px;
+	border-spacing:20px;
+}
+	
+p {
+	left: 2%;
+	top:10%
+	bottom:-25%;
+	max-width:99%;
+	max-height:100%;
+	color:black
+}
+
+
+h1 {
+position:absolute;
+align-content: center;
+color: Blue;
+left: 2%;
+top:10%
+bottom:-25%;
+max-width:99%;
+max-height:100%;
+}
+
+.container {
+    position: absolute;
+    align-content:center;
+    top: 5%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+}
