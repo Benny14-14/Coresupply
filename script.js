@@ -1,15 +1,80 @@
-document.getElementById('searchBtn').addEventListener('click', function() {
-    const searchTerm = document.getElementById('searchInput').value;
-    alert('Suche nach: ' + searchTerm);
-});
+// Produkte in drei Kategorien
+const eingabeProdukte = [
+    { name: "Maus", bild: "Produkte/bilder/Eingabe/maus.png" },
+    { name: "Tastatur", bild: "Produkte/bilder/Eingabe/tastatur.png" },
+    { name: "Mikrofon", bild: "Produkte/bilder/Eingabe/mikrofon.png" },
+    { name: "Webcam", bild: "Produkte/bilder/Eingabe/webcam.png" },
+    { name: "Gamepad", bild: "Produkte/bilder/Eingabe/gamepad.png" }
+];
 
-document.getElementById('loginBtn').addEventListener('click', function() {
-    alert('Login angeklickt');
-});
+const ausgabeProdukte = [
+    { name: "Bildschirm", bild: "Produkte/bilder/Ausgabe/bildschirm.png" },
+    { name: "Lautsprecher", bild: "Produkte/bilder/Ausgabe/lautsprecher.png" },
+    { name: "Drucker", bild: "Produkte/bilder/Ausgabe/drucker.png" },
+    { name: "Beamer", bild: "Produkte/bilder/Ausgabe/beamer.png" },
+    { name: "Headset", bild: "Produkte/bilder/Ausgabe/headset.png" }
+];
 
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-addToCartButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        alert('Produkt wurde in den Warenkorb gelegt!');
+const netzwerkProdukte = [
+    { name: "Router", bild: "Produkte/bilder/Netzwerk/router.png" },
+    { name: "WLAN-Verstärker", bild: "Produkte/bilder/Netzwerk/wlan-verstaerker.png" },
+    { name: "Splitter", bild: "Produkte/bilder/Netzwerk/splitter.png" },
+    { name: "Hub", bild: "Produkte/bilder/Netzwerk/hub.png" },
+    { name: "LAN-Kabel", bild: "Produkte/bilder/Netzwerk/lan-kabel.png" }
+];
+
+// HTML in die Seite einfügen
+function ladeProdukte() {
+    const grid = document.querySelector('.product-grid');
+
+    const spalte1 = document.createElement('div');
+    spalte1.classList.add('column');
+    eingabeProdukte.forEach(produkt => {
+        spalte1.appendChild(erstelleProdukt(produkt));
+    });
+
+    const spalte2 = document.createElement('div');
+    spalte2.classList.add('column');
+    ausgabeProdukte.forEach(produkt => {
+        spalte2.appendChild(erstelleProdukt(produkt));
+    });
+
+    const spalte3 = document.createElement('div');
+    spalte3.classList.add('column');
+    netzwerkProdukte.forEach(produkt => {
+        spalte3.appendChild(erstelleProdukt(produkt));
+    });
+
+    grid.appendChild(spalte1);
+    grid.appendChild(spalte2);
+    grid.appendChild(spalte3);
+}
+
+// Produkt-Karte erstellen
+function erstelleProdukt(produkt) {
+    const div = document.createElement('div');
+    div.classList.add('product');
+
+    const img = document.createElement('img');
+    img.src = produkt.bild;
+    img.alt = produkt.name;
+
+    const p = document.createElement('p');
+    p.textContent = produkt.name;
+
+    div.appendChild(img);
+    div.appendChild(p);
+
+    return div;
+}
+
+// Button-Logik
+document.addEventListener('DOMContentLoaded', () => {
+    ladeProdukte();
+
+    const moreButton = document.getElementById('moreButton');
+    moreButton.addEventListener('click', () => {
+        // Benutzer zur Eingabe-Seite weiterleiten
+        window.location.href = "Eingabe/index.html";
     });
 });
