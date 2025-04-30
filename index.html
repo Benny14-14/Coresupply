@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Coresupply.de</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
 <header>
-    <div class="nav-container">
-        <div class="logo">
-            <img src="logo.png" alt="Logo" />
-        </div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="Eingabe/index.html">EINGABE</a>
-            <a href="Ausgabe/index.html">AUSGABE</a>
-            <a href="Netzwerk/index.html">NETZWERK</a>
-        </nav>
-        <div class="search-login">
-            <input type="text" placeholder="Suchen..." id="searchInput">
-            <button id="searchBtn">Suchen</button>
-            <button id="loginBtn">Login</button>
-            <img src="cart-icon.png" alt="Warenkorb" class="cart-icon">
-        </div>
-    </div>
+    <table>
+        <tr>
+            <td><a href="index.html">Homepage</a></td>
+            <td><a href="Eingabe/index.html">Eingabe</a></td>
+            <td><a href="Ausgabe/index.html">Ausgabe</a></td>
+            <td><a href="Netzwerk/index.html">Netzwerk</a></td>
+        </tr>
+    </table>
 </header>
 
 <main>
-    <div class="products-container">
-        <div class="product-card">
-            <div class="product-image">PRODUKT VORSCHAU</div>
-            <div class="product-description">PRODUKT BESCHREIBUNG</div>
-            <button class="add-to-cart">IN DEN WARENKORB</button>
-        </div>
-        <div class="product-card">
-            <div class="product-image">PRODUKT VORSCHAU</div>
-            <div class="product-description">PRODUKT BESCHREIBUNG</div>
-            <button class="add-to-cart">IN DEN WARENKORB</button>
-        </div>
-        <div class="product-card">
-            <div class="product-image">PRODUKT VORSCHAU</div>
-            <div class="product-description">PRODUKT BESCHREIBUNG</div>
-            <button class="add-to-cart">IN DEN WARENKORB</button>
-        </div>
+    <section class="product-grid">
+        <!-- Produkte werden hier von JavaScript eingefügt -->
+    </section>
+
+    <div class="load-more">
+        <button id="moreButton">Mehr entdecken</button>
     </div>
 </main>
 
