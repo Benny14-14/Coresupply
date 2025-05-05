@@ -1,4 +1,10 @@
-/* Header */
+html{
+	font-family:Verdana;
+	background-color: #4d4d4d
+}
+
+
+
 header {
     position: absolute;
     align-content: center;
@@ -6,12 +12,18 @@ header {
     top: 0px;
     color: white;
     font-size: 180%;
-    background-color: rgba(0, 0, 200, 0.51);
+    background-color: rgba(0, 0, 255, 0.5);
     height: 75px;
     max-height: 10%;
     width: 100%;
     max-width: 101%;
 }
+
+body{
+
+}
+
+
 
 table {
     position: absolute;
@@ -22,6 +34,12 @@ table {
     padding: 0px;
     border-spacing: 20px;
 }
+table a {
+	color:white;
+	text-decoration:none
+}
+
+
 
 /* Produkt-Grid */
 .product-grid {
@@ -62,7 +80,7 @@ table {
 /* Mehr entdecken Button */
 .load-more {
     margin-top: 50px;
-    text-align: center;
+    text-align: center;                                                                 
 }
 
 #moreButton {
