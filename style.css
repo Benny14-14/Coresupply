@@ -96,3 +96,34 @@ table a {
 #moreButton:hover {
     background-color: #000099;
 }
+
+.error-page {
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+}
+
+.error-page h1 {
+    font-size: 48px;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+.error-page p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.error-button {
+    display: inline-block;
+    background-color: #0000cc;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.error-button:hover {
+    background-color: #000099;
+}
