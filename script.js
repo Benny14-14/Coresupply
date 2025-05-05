@@ -1,26 +1,23 @@
 // Produkte in drei Kategorien
 const eingabeProdukte = [
-    { name: "Maus", bild: "Produkte/bilder/Eingabe/maus.png" },
-    { name: "Tastatur", bild: "Produkte/bilder/Eingabe/tastatur.png" },
-    { name: "Mikrofon", bild: "Produkte/bilder/Eingabe/mikrofon.png" },
-    { name: "Webcam", bild: "Produkte/bilder/Eingabe/webcam.png" },
-    { name: "Gamepad", bild: "Produkte/bilder/Eingabe/gamepad.png" }
+    { name: "Maus", bild: "Produkte/bilder/Eingabe/maus.jpg" },
+    { name: "Tastatur", bild: "Produkte/bilder/Eingabe/tastatur.jpeg" },
+    { name: "Mikrofon", bild: "Produkte/bilder/Eingabe/mikrofon.jpeg" },
+    { name: "Mousepad", bild: "Produkte/bilder/Eingabe/mousepad.jpeg" }
 ];
 
-const ausgabeProdukte = [
-    { name: "Bildschirm", bild: "Produkte/bilder/Ausgabe/bildschirm.png" },
-    { name: "Lautsprecher", bild: "Produkte/bilder/Ausgabe/lautsprecher.png" },
-    { name: "Drucker", bild: "Produkte/bilder/Ausgabe/drucker.png" },
-    { name: "Beamer", bild: "Produkte/bilder/Ausgabe/beamer.png" },
-    { name: "Headset", bild: "Produkte/bilder/Ausgabe/headset.png" }
+const ausgabeProdukte = [                                                        
+    { name: "Bildschirm", bild: "Produkte/bilder/Ausgabe/bildschirm.jpeg" },
+    { name: "Lautsprecher", bild: "Produkte/bilder/Ausgabe/lautsprecher.jpeg" },
+    { name: "Beamer", bild: "Produkte/bilder/Ausgabe/beamer.jpeg" },
+    { name: "Headset", bild: "Produkte/bilder/Ausgabe/headset.jpe	g" }
 ];
 
 const netzwerkProdukte = [
-    { name: "Router", bild: "Produkte/bilder/Netzwerk/router.png" },
+    { name: "Router", bild: "Produkte/bilder/Netzwerk/router.jpeg" },
     { name: "WLAN-Verstärker", bild: "Produkte/bilder/Netzwerk/wlan-verstaerker.png" },
-    { name: "Splitter", bild: "Produkte/bilder/Netzwerk/splitter.png" },
-    { name: "Hub", bild: "Produkte/bilder/Netzwerk/hub.png" },
-    { name: "LAN-Kabel", bild: "Produkte/bilder/Netzwerk/lan-kabel.png" }
+    { name: "Splitter", bild: "Produkte/bilder/Netzwerk/splitter.jpg" },
+    { name: "LAN-Kabel", bild: "Produkte/bilder/Netzwerk/lan-kabel.jpeg" }
 ];
 
 // HTML in die Seite einfügen
