@@ -19,20 +19,15 @@ header {
     max-width: 101%;
 }
 
-body{
-
-}
-
-
-
-table {
-    position: absolute;
-    left: 10%;
-    bottom: 0%;
-    border-collapse: separate;
-    table-layout: auto;
-    padding: 0px;
-    border-spacing: 20px;
+header ul {
+    	position: absolute;
+	display:flex;
+	flex-flow:row nowrap;
+	align-content:center;
+    	border-collapse: separate;
+    	table-layout: auto;
+    	padding: 0px;
+    	border-spacing: 20px;
 }
 table a {
 	color:white;
